@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Тест JS</title>
+    <style>
+      .box1 {
+        background: yellow;
+        height: 680px;
+        width: 700px;
+        position: absolute;
+        left: 550px;
+        top:50px;
+        display: ;
+      }
+      .box2 {
+        background: yellow;
+        height: 680px;
+        width: 700px;
+        position: absolute;
+        left: 550px;
+        top:50px;
+        display: none;
+      }
+      .box3 {
+        background: yellow;
+        height: 680px;
+        width: 700px;
+        position: absolute;
+        left: 550px;
+        top:50px;
+        display: none;
+      }
+      .img {
+        height:400px;
+        width:700px;
+      }
+      .question-1 {
+        background: orange;
+        height: 40px;
+        width: 700px;
+      }
+      .question-2 {
+        background: cyan;
+        height: 40px;
+        width: 700px;
+      }
+      .question-3 {
+        background: pink;
+        height: 40px;
+        width: 700px;
+      }
+      .question-4 {
+        background: orange;
+        height: 40px;
+        width: 700px;
+      }
+      .question-5 {
+        background: cyan;
+        height: 40px;
+        width: 700px;
+      }
+      .question-6 {
+        background: pink;
+        height: 40px;
+        width: 700px;
+      }
+      .question-7 {
+        background: orange;
+        height: 40px;
+        width: 700px;
+      }
+      .question-8 {
+        background: cyan;
+        height: 40px;
+        width: 700px;
+      }
+      .question-9 {
+        background: pink;
+        height: 40px;
+        width: 700px;
+      }
+      .d-flex {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="d-flex">
+     <div class="box1">
+        <h1> Каков абсолютный рекорд скорости для серийного автомобиля ? </h1>
+        <img src="1.jpg" class="img">
+        <div class="question-1">
+          <p style="font-size: 23px;"> 198км/ч</p>
+        </div>
+        <div class="question-2">
+          <p style="font-size: 23px;"> 605км/ч</p>
+        </div>
+        <div class="question-3">
+          <p style="font-size: 23px;"> 490км/ч</p>
+        </div>
+     </div>
+
+     <div class="box2">
+        <h1> В каком фильме была машина Mazda RX 7 ? </h1>
+        <img src="2.jpg" class="img">
+        <div class="question-4">
+          <p style="font-size: 23px;"> Т4кси </p>
+        </div>
+        <div class="question-5">
+          <p style="font-size: 23px;"> Тройной Форсаж: Токийский дрифт</p>
+        </div>
+        <div class="question-6">
+          <p style="font-size: 23px;"> Ford против Ferrari</p>
+        </div>
+     </div>
+
+     <div class="box3">
+        <h1> На каком автомобиле передвигался Брайан О'Коннер в фильме : "Двойной Форсаж" ? </h1>
+        <img src="3.jpg" class="img">
+        <div class="question-7">
+          <p style="font-size: 23px;"> Nissan Skyline GT-R (R-34) </p>
+        </div>
+        <div class="question-8">
+          <p style="font-size: 23px;"> Mitsubishi Lancer EVO 9 </p>
+        </div>
+        <div class="question-9">
+          <p style="font-size: 23px;"> Toyota Supra </p>
+        </div>
+     </div>
+  </div>
+
+
+  <script type="text/javascript">
+    document.querySelector('.question-1').onclick = function () {
+      alert('Лол вообще нет, МАКСИМАЛЬНАЯ а не МИНИМАЛЬНАЯ xD');
+    }
+    document.querySelector('.question-2').onclick = function () {
+      alert('Почти, но нет)');
+    }
+    document.querySelector('.question-3').onclick = function () {
+      alert('Правильно! Рекорд был поставлен Bugatti Chiron (так к слову она на фотке)');
+      document.querySelector('.box2').style.display = 'block';
+      document.querySelector('.box1').style.display = 'none';
+    }
+  
+    document.querySelector('.question-4').onclick = function () {
+      alert('Ноуп');
+    }
+    document.querySelector('.question-5').onclick = function () {
+      alert('Даа! В фильме Тройной Форсаж: Токийский дрифт на этом авто передвигался герой по имени Хан');
+      document.querySelector('.box3').style.display = 'block';
+    }
+    document.querySelector('.question-6').onclick = function () {
+      alert('Камон это вообще другой век, тогда этой машины еще не было xD');  
+    }
+
+    document.querySelector('.question-7').onclick = function () {
+      alert('Ответ правильный, герой Пола Уокера Брайан ездил на легендарном Скайлайне');
+      document.querySelector('.box2').style.display = 'none';
+      document.querySelector('.box3').style.display = 'none';
+      document.querySelector('.box1').style.display = 'block';
+    }
+    document.querySelector('.question-8').onclick = function () {
+      alert('Нет, на этой тачке гонял Роман (который черный))');
+    }
+    document.querySelector('.question-9').onclick = function () {
+      alert('Нуу, на этой машине он тоже ездил, но не на основе');  
+    }
+  </script>
+  </body>
+</html>
